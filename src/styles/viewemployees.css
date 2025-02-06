@@ -1,0 +1,114 @@
+.view-employees-container {
+    padding: 20px;
+    text-align: center;
+    width:100% !important;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.th-employees {
+    background-color: #ffffff; 
+    font-weight: bold;
+    
+    
+    
+}
+
+.th-employees:nth-child(1), td:nth-child(1) {
+    width: 2%;
+}
+.th-employees:nth-child(2), td:nth-child(2) { /* Coloana Nume */
+    width: 10%; /* Ajustează lățimea */
+
+}
+
+.th-employees:nth-child(3), td:nth-child(3) { /* Coloana Prenume */
+    width: 10%; /* Ajustează lățimea */ 
+}
+
+.th-employees:nth-child(4), td:nth-child(4) { /* Coloana Telefon */
+    width: 15%; /* Ajustează lățimea */
+}
+
+.th-employees:nth-child(5), td:nth-child(5) {
+    width: 15%;
+}
+
+.th-employees:nth-child(6), td:nth-child(6) {
+    width: 10%!important;
+    text-align: center;
+    align-items: center !important;
+    margin-left: 30px;
+}
+
+.actions-employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 260px !important;
+    
+    
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: inline-block !important;
+}
+
+.editt-btn {
+    background: linear-gradient(90deg, #00e4ff, #0093ff);
+        color: black;
+    
+    
+}
+
+.editt-btn:hover {
+    background: linear-gradient(90deg, #5df5ff, #1dacf6);
+    color: black;
+    }
+
+.deletee-btn {
+    background: linear-gradient(90deg, #ff6161, #ff3d3d);
+        color: black;
+    
+}
+
+.deletee-btn:hover {
+    background: linear-gradient(90deg, #ff8a8a, #ff6161);
+    color: black;
+    }
+
+.addd-btn {
+    background: linear-gradient(90deg, #b8ff65, #75d700);
+        color: black;
+}
+
+.addd-btn:hover {
+    background: linear-gradient(90deg, #d1ff9e, #95f257);
+    color: black;
+    }

@@ -1,0 +1,122 @@
+.view-customers-container {
+    padding: 20px;
+    text-align: center;
+    width:100% !important;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.th-customers {
+    background-color: #ffffff; 
+    font-weight: bold;
+    
+    
+    
+}
+
+.th-customers:nth-child(1), td:nth-child(1) {
+    width: auto;
+}
+
+.th-customers:nth-child(2), td:nth-child(2) { /* Coloana Nume */
+    width: auto; /* Ajustează lățimea */
+
+}
+
+.th-customers:nth-child(3), td:nth-child(3) { /* Coloana Prenume */
+    width: auto; /* Ajustează lățimea */ 
+}
+
+.th-customers:nth-child(4), td:nth-child(4) { /* Coloana Telefon */
+    width: auto; /* Ajustează lățimea */
+}
+
+.th-customers:nth-child(5), td:nth-child(5) {
+    width: auto;
+}
+
+.th-customers:nth-child(6), td:nth-child(6) {
+    width: auto !important;
+}
+
+.th-customers:nth-child(7), td:nth-child(7) {
+    width: 10%; /* O lățime mai mică */
+    white-space: nowrap; /* Textul rămâne pe o singură linie */
+    overflow: hidden; /* Ascunde partea care depășește */
+    text-overflow: ellipsis; /* Adaugă "..." la finalul textului care depășește */
+    max-width: 80px; /* Poți ajusta această valoare pentru a controla mai bine lățimea */
+}
+
+.th-customers:nth-child(8), td:nth-child(8) {
+    width: auto !important; /* Lățimea coloanei Acțiuni */
+}
+
+.actions-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: inline-block !important;
+}
+
+.edit-btnn {
+    background: linear-gradient(90deg, #00e4ff, #0093ff);
+    color: black;
+    
+}
+
+.edit-btnn:hover {
+    background: linear-gradient(90deg, #5df5ff, #1dacf6);
+    color: black;
+    }
+
+.delete-btnn {
+    background: linear-gradient(90deg, #ff6161, #ff3d3d);
+    color: rgb(0, 0, 0);
+    
+}
+
+.delete-btnn:hover {
+    background: linear-gradient(90deg, #ff8a8a, #ff6161);
+    color: black;
+    }
+
+.add-btnn {
+    background: linear-gradient(90deg, #b8ff65, #75d700);
+    color: rgb(0, 0, 0);
+}
+
+.add-btnn:hover {
+    background: linear-gradient(90deg, #d1ff9e, #95f257);
+    color: black;
+    }
+    

@@ -1,0 +1,138 @@
+.view-cars-container {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* pentru a controla lățimea celulelor */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.th-cars {
+    background-color: #ffffff; 
+    font-weight: bold;
+    
+    
+}
+
+.th-cars:nth-child(1), td:nth-child(1) {
+    width: 8%;
+}
+
+.th-cars:nth-child(2), td:nth-child(2) {
+    width: 12%;
+}
+
+.th-cars:nth-child(3), td:nth-child(3) {
+    width: 12%;
+}
+
+.th-cars:nth-child(4), td:nth-child(4) {
+    width: 12%;
+}
+
+.th-cars:nth-child(5), td:nth-child(5) {
+    width: 10%;
+}
+
+.th-cars:nth-child(6), td:nth-child(6) {
+    width: 10%;
+}
+
+.th-cars:nth-child(7), td:nth-child(7) {
+    width: 10%;
+}
+
+.th-cars:nth-child(8), td:nth-child(8) {
+    width: 30%; /* Lățimea coloanei Acțiuni */
+}
+
+table td.actions {
+    text-align: center; /* Centrează conținutul pe orizontală */
+    padding: 8px; /* Spațiu în jurul conținutului */
+}
+
+.actions {
+    display: flex; /* Flexbox pentru a aranja butoanele pe același rând */
+    justify-content: center; /* Centrează butoanele pe orizontală */
+    align-items: center; /* Centrează butoanele pe verticală */
+    gap: 5px; /* Spațiu între butoane */
+}
+
+button {
+    padding: 6px 12px; /* Ajustează dimensiunea butoanelor */
+    font-size: 14px; /* Dimensiunea textului */
+    border-radius: 4px; /* Colțuri rotunjite mai mici */
+    cursor: pointer;
+    border: none;
+    white-space: nowrap; /* Previne textul de pe buton să treacă pe rânduri diferite */
+    display: inline-block;
+    
+    
+}
+
+.edit-btn {
+    background: linear-gradient(90deg, #00e4ff, #0093ff);
+        color: black;
+    display: inline-block;
+    margin-left: 10px !important;
+    
+}
+
+.edit-btn:hover {
+    background: linear-gradient(90deg, #5df5ff, #1dacf6);
+    color: black;
+    }
+
+.delete-btn {
+    background: linear-gradient(90deg, #ff6161, #ff3d3d);
+        color: black;
+    display: inline-block;
+}
+
+
+.delete-btn:hover {
+    background: linear-gradient(90deg, #ff8a8a, #ff6161);
+    color: black;
+    }
+
+
+.add-btn {
+    background: linear-gradient(90deg, #b8ff65, #75d700);
+        color: black;
+    display: inline-block !important;
+    
+}
+
+
+.add-btn:hover {
+    background: linear-gradient(90deg, #d1ff9e, #95f257);
+    color: black;
+    }
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.filter-container {
+    width: 200px; /* Dimensiune pentru zona de filtrare */
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+

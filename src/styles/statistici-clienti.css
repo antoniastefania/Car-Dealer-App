@@ -1,0 +1,136 @@
+.centered-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.trophy-icon {
+    font-size: 24px;
+    color: gold;
+    animation: glowing 1.5s infinite alternate;
+}
+
+.top-client-row {
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347, 0 0 40px #ff6347, 0 0 50px #ff6347;
+    }
+}
+.client-name-with-icon {
+    display: flex;
+    align-items: center; /* Aliniază iconița și textul pe axa verticală */
+}
+
+.client-name-with-icon .react-icon {
+    margin-right: 10px; /* Lasă un spațiu între iconiță și text */
+}
+
+.top-client-heading {
+    display: flex;
+    align-items: center;
+}
+/* Centrarea textului în antetul tabelului */
+table th {
+    text-align: center;
+}
+
+/* Centrarea textului în celulele tabelului */
+table td {
+    text-align: center;
+}
+
+/* Dacă vrei ca întreaga tabelă să fie aliniată la centru */
+.centered-content table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+/* Stiluri pentru tabele (opțional, pentru un aspect mai bun) */
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Stil pentru rândurile impare pentru un contrast mai bun */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.top-client-heading{
+    text-align:center;
+}
+
+/* Centrarea textului în antetul tabelului */
+table th {
+    text-align: center;
+}
+
+/* Centrarea textului în celulele tabelului */
+table td {
+    text-align: center;
+}
+
+/* Stil pentru clientul cu cele mai multe achiziții */
+.client-name-with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adaugă un pic de spațiu între iconiță și nume */
+    gap: 10px;
+}
+
+/* Stiluri pentru tabele (opțional, pentru un aspect mai bun) */
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Stil pentru rândurile impare pentru un contrast mai bun */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

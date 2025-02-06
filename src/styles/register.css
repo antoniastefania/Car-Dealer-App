@@ -1,0 +1,110 @@
+/* Container principal pentru register */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  background: linear-gradient(135deg, #6e7dff, #4db6ac); /* Aceleași culori ca la login */
+}
+
+/* Cutia pentru register */
+.register-content {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100vh;
+  
+}
+
+/* Stil pentru imagine */
+.register-image img {
+  width: 400px;  /* Diminuează lățimea imaginii */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cutia formularului */
+.register-box {
+  padding: 20px 30px;  /* Redu paddingul pentru a face formularul mai compact */
+  max-width: 350px;     /* Lățimea maximă mai mică */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Titlu */
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 15px;  /* Mai puțin spațiu sub titlu */
+  font-size: 40px;      /* Font mai mic */
+  color: #333;
+}
+
+/* Stiluri pentru input-uri */
+.register-box input {
+  margin: 8px 0;        /* Mai puțin spațiu între inputuri */
+  padding: 10px;        /* Padding mai mic */
+  font-size: 14px;      /* Font mai mic */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.register-box input:focus {
+  border-color: #6e7dff;
+  outline: none;
+}
+
+/* Stiluri pentru buton */
+.register-box button {
+  padding: 10px;        /* Padding mai mic */
+  background-color: #6e7dff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(110, 125, 255, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-box button:hover {
+  background-color: #5a6aff;
+  box-shadow: 0px 6px 12px rgba(110, 125, 255, 0.5);
+}
+
+
+
+
+.password-strength {
+  display: flex;
+  height: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.strength-bar {
+  flex-grow: 1;
+  transition: background-color 0.3s;
+}
+
+.strength-bar.weak {
+  background-color: red;
+}
+
+.strength-bar.medium {
+  background-color: yellow;
+}
+
+.strength-bar.strong {
+  background-color: green;
+}

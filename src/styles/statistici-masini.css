@@ -1,0 +1,47 @@
+/* Centrăm textul pe întreaga pagină */
+h1 {
+    text-align: center; /* Centrează textul */
+    font-size: 36px; /* Setează dimensiunea fontului */
+    color: #2d3b55; /* Culoare mai închisă pentru titlu */
+    font-family: 'Arial', sans-serif; /* Font simplu și curat */
+    margin-top: 20px; /* Adaugă un spațiu deasupra titlului */
+    transition: all 0.3s ease-in-out; /* Efect de tranziție */
+}
+
+/* Efect de schimbare a culorii la hover */
+h1:hover {
+    color: #ff6600; /* Culoare portocalie la hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adaugă un umbră subtilă */
+    transform: scale(1.1); /* Lărgește titlul ușor */
+}
+
+/* Efecte pentru paragrafe */
+p {
+    text-align: center; /* Centrează textul */
+    font-size: 18px; /* Dimensiune font potrivită */
+    color: #555; /* Culoare mai deschisă pentru textul paragrafului */
+    margin: 10px 0; /* Adaugă un spațiu vertical între paragrafe */
+}
+
+/* Stilizează tabelele */
+table {
+    width: 80%; /* Lărgește tabela */
+    margin: 20px auto; /* Centrează tabela pe pagină */
+    border-collapse: collapse; /* Îmbină celulele tabelei */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă un umbră subtilă */
+}
+
+th, td {
+    padding: 10px; /* Adaugă spațiu în jurul textului */
+    text-align: center; /* Centrează textul din celule */
+    border: 1px solid #ddd; /* Adaugă margini subtile */
+}
+
+th {
+    background-color: #f4f4f4; /* Culoare de fundal pentru capul tabelei */
+    font-weight: bold; /* Textul din capul tabelei va fi mai îngroșat */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Schimbă culoarea fundalului la hover */
+}

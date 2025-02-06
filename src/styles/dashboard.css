@@ -1,0 +1,138 @@
+/* Container pentru dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7dff, #4db6ac); /* Fundal similar cu cel de la login */
+  }
+  
+  /* Secțiune principală pentru dashboard */
+  .dashboard-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spațiu între carduri */
+    justify-content: center; /* Centerază cardurile pe orizontală */
+  }
+  
+  /* Stil pentru card */
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Distanta de perspectiva pentru efectul de rotire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container pentru cardul care se rotește */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  /* Rotire când hover pe card */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Întoarcerea cardului pe axa Y */
+  }
+  
+  /* Partea din față a cardului (textul și imaginea) */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ascunde spatele când cardul este întors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Partea din față a cardului */
+  .flip-card-front {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Partea din spate a cardului */
+  .flip-card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg); /* Asigură rotirea pe axa Y pentru spatele cardului */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Stil pentru imagine */
+  .flip-card-image {
+    max-width: 100%;
+    height: 150px; /* Poți ajusta dimensiunea imaginii după preferință */
+    object-fit: cover; /* Asigură că imaginea este scalată corect */
+    margin-bottom: 20px;
+  }
+  
+  /* Stil pentru butoane */
+  .buton {
+    padding: 12px;
+    background-color: #6e7dff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(110, 125, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover pe butoane */
+  .buton:hover {
+    background-color: #5a6aff;
+    box-shadow: 0px 6px 12px rgba(110, 125, 255, 0.5);
+  }
+  
+
+
+  /* Stil pentru titlul Admin Dashboard */
+.dashboard-container h1 {
+    font-size: 3rem; /* Dimensiune mare pentru titlu */
+    font-weight: bold;
+    color: #ffffff; /* Culoare albă pentru titlu */
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase; /* Transformă textul în majuscule */
+    letter-spacing: 2px; /* Spațiere între litere */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(110, 125, 255, 0.8), 0 0 30px rgba(110, 125, 255, 0.9); /* Efect de strălucire */
+    animation: glowing 1.5s infinite alternate; /* Animație de glow */
+  }
+
+  .flip-card-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+  
+  /* Animația de glow */
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(110, 125, 255, 0.8), 0 0 15px rgba(110, 125, 255, 0.9);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(110, 125, 255, 0.8), 0 0 40px rgba(110, 125, 255, 0.9);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(110, 125, 255, 0.8), 0 0 25px rgba(110, 125, 255, 0.9);
+    }
+  }
+  

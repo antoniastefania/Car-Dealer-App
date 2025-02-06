@@ -1,0 +1,135 @@
+.view-sales-container {
+    padding: 20px;
+    text-align: center;
+    width:100% !important;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+table, th, td {
+    border: 5px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+tr:not(:last-child) {
+    border-bottom: 2px solid #ddd; /* Linie între rânduri */
+}
+.th-sales {
+    background-color: #ffffff; 
+    font-weight: bold;
+    
+    
+    
+}
+
+.th-sales:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+.th-sales:nth-child(2), td:nth-child(2) { /* Coloana Nume */
+    width: 10%; /* Ajustează lățimea */
+
+}
+
+.th-sales:nth-child(3), td:nth-child(3) { /* Coloana Prenume */
+    width: 10%; /* Ajustează lățimea */ 
+}
+
+.th-sales:nth-child(4), td:nth-child(4) { /* Coloana Telefon */
+    width: 15%; /* Ajustează lățimea */
+}
+
+.th-sales:nth-child(5), td:nth-child(5) {
+    width: 15%;
+}
+.th-sales:nth-child(6), td:nth-child(6) {
+    width: 15%;
+}
+
+.th-sales:nth-child(7), td:nth-child(7) {
+    width: 20%!important;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 115px;
+    
+}
+
+.actions-sales {
+    display: flex;
+    justify-content: center; /* Centrează butoanele în celulă */
+    align-items: center;
+    gap: 10px;
+    
+    flex-wrap: wrap;
+    }
+    
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        transition: all 0.3s ease-in-out; /* Trecere lină a stilurilor */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:hover {
+        background: linear-gradient(90deg, #ff7eb3, #ff758c); /* Schimbă culorile */
+        transform: scale(1.1); /* Mărește butonul */
+        box-shadow: 0 8px 12px rgba(255, 117, 140, 0.5); /* Strălucire suplimentară */
+        }
+        
+        button:active {
+        transform: scale(0.95); /* Ușor mai mic la apăsare */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(90deg, #ff758c, #ff7eb3); /* Culori inversate */
+        }
+        
+        /* Stiluri individuale pentru butoane */
+        .editt-btnn {
+        background: linear-gradient(90deg, #00e4ff, #0093ff);
+        color: black;
+        }
+        
+        .editt-btnn:hover {
+        background: linear-gradient(90deg, #5df5ff, #1dacf6);
+        color: black;
+        }
+        
+        .deletee-btnn {
+        background: linear-gradient(90deg, #ff6161, #ff3d3d);
+        color: black;
+        }
+        
+        .deletee-btnn:hover {
+        background: linear-gradient(90deg, #ff8a8a, #ff6161);
+        color: black;
+        }
+        
+        .addd-btnn {
+        background: linear-gradient(90deg, #b8ff65, #75d700);
+        color: black;
+        }
+        
+        .addd-btnn:hover {
+        background: linear-gradient(90deg, #d1ff9e, #95f257);
+        color: black;
+        }
+        

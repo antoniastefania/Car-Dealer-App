@@ -1,0 +1,77 @@
+/* Container principal pentru login */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e7dff, #4db6ac);
+}
+
+.login-content {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Stil pentru imagine */
+.login-image img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cutia pentru login */
+.login-box {
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box h2 {
+  
+  text-align:center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #333;
+}
+
+/* Stiluri pentru input-uri */
+.login-box input {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-box input:focus {
+  border-color: #6e7dff;
+  outline: none;
+}
+
+/* Stiluri pentru buton */
+.login-box button {
+  padding: 12px;
+  background-color: #6e7dff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(110, 125, 255, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #5a6aff;
+  box-shadow: 0px 6px 12px rgba(110, 125, 255, 0.5);
+}

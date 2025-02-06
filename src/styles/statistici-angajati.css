@@ -1,0 +1,7 @@
+/* Adaugă acest CSS în fișierul de stiluri (ex: StatisticiAngajati.css) */
+.paragraph{
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,92 @@
+/* Container principal pentru AddCar */
+.addcar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7dff, #4db6ac); /* Culori similare cu cele de la register */
+}
+
+/* Cutia pentru AddCar */
+.addcar-content {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Stil pentru imagine */
+.addcar-image img {
+    width: 400px;  /* Diminuarea lățimii imaginii */
+    height: auto;
+    object-fit: cover;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+/* Cutia formularului */
+.addcar-box {
+    padding: 20px 30px;  /* Redu paddingul pentru a face formularul mai compact */
+    max-width: 350px;     /* Lățimea maximă mai mică */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Titlu */
+.addcar-box h2 {
+    text-align: center;
+    margin-bottom: 15px;  /* Mai puțin spațiu sub titlu */
+    font-size: 40px;      /* Font mai mic */
+    color: #333;
+}
+
+/* Stiluri pentru input-uri */
+.addcar-box input,
+.addcar-box textarea {
+    margin: 8px 0;        /* Mai puțin spațiu între inputuri */
+    padding: 10px;        /* Padding mai mic */
+    font-size: 14px;      /* Font mai mic */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus pe input-uri */
+.addcar-box input:focus,
+.addcar-box textarea:focus {
+    border-color: #6e7dff;
+    outline: none;
+}
+
+/* Stiluri pentru buton */
+.addcar-box button {
+    padding: 10px;        /* Padding mai mic */
+    background-color: #6e7dff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(110, 125, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addcar-box button:hover {
+    background-color: #5a6aff;
+    box-shadow: 0px 6px 12px rgba(110, 125, 255, 0.5);
+}
+
+/* Mesaj de succes sau eroare */
+.addcar-box p {
+    text-align: center;
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+}

@@ -1,0 +1,31 @@
+.edit-sale-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-sale-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-sale-container input,
+.edit-sale-container button {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.edit-sale-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-sale-container button:hover {
+    background-color: #0056b3;
+}

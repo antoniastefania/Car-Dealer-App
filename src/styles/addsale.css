@@ -1,0 +1,31 @@
+.add-sale-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-sale-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-sale-container input,
+.add-sale-container button {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.add-sale-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-sale-container button:hover {
+    background-color: #0056b3;
+}
